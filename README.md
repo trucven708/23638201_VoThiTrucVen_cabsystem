@@ -25,7 +25,7 @@
 * **Báo cáo, phân quyền** → hỗ trợ quản lý và ra quyết định.
 * **Có khả năng mở rộng** → đáp ứng nhiều người dùng và dễ phát triển tính năng mới.
 
-##2
+## 2.
 
 | Stakeholder                 | Vai trò                                              | Tầm quan trọng |
 | --------------------------- | ---------------------------------------------------- | -------------- |
