@@ -25,14 +25,17 @@
 * **Báo cáo, phân quyền** → hỗ trợ quản lý và ra quyết định.
 * **Có khả năng mở rộng** → đáp ứng nhiều người dùng và dễ phát triển tính năng mới.
 
-## 2. Các bên liên quan
-
 | Stakeholder                 | Vai trò                                              | Tầm quan trọng |
 | --------------------------- | ---------------------------------------------------- | -------------- |
 | **Khách hàng**              | Đặt xe, theo dõi chuyến, thanh toán, đánh giá        | **Cao**        |
 | **Tài xế**                  | Nhận và thực hiện chuyến, cập nhật trạng thái/vị trí | **Cao**        |
 | **Nhân viên vận hành**      | Quản lý tài xế, khách hàng, chuyến đi và xử lý sự cố | **Cao**        |
 | **Ban giám đốc**            | Định hướng, phê duyệt và theo dõi hiệu quả dự án     | **Cao**        |
+| **Tài chính/Kế toán**       | Quản lý doanh thu, thanh toán và đối soát            | **Trung bình** |
+| **IT/Đội phát triển**       | Xây dựng, triển khai và bảo trì hệ thống             | **Cao**        |
+| **Nhà cung cấp thanh toán** | Xử lý thanh toán điện tử                             | **Trung bình** |
+| **Nhà cung cấp thông báo**  | Cung cấp SMS/Email/Push Notification                 | **Trung bình** |
+
 ### Mindmap Stakeholder
 
 ```text
