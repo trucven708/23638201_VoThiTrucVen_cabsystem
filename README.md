@@ -58,21 +58,18 @@
  Thanh toán Cập nhật
  Đánh giá   vị trí
 ```
+                         MỨC ĐỘ QUAN TÂM
+                    THẤP ───────────────► CAO
 
-### Phân nhóm mức độ quan trọng
-
-                    MỨC ĐỘ QUAN TÂM
-                 THẤP                CAO
-              ┌───────────────┬───────────────┐
-        CAO   │ GIỮ HÀI LÒNG  │ QUẢN LÝ CHẶT  │
-              │               │               │
-              │ • Kế toán     │ • Ban giám đốc│
-              │               │ • Vận hành    │
-QUYỀN         │               │ • IT          │
-LỰC           ├───────────────┼───────────────┤
-        THẤP  │ THEO DÕI      │ GIỮ THÔNG TIN │
-              │               │               │
-              │ • Notification│ • Khách hàng  │
-              │               │ • Tài xế      │
-              │               │ • Payment     │
-              └───────────────┴───────────────┘
+            ▲
+            │
+      CAO   │  GIỮ HÀI LÒNG       QUẢN LÝ CHẶT
+            │  • Kế toán           • Ban giám đốc
+            │                      • Vận hành
+QUYỀN       │                      • IT
+LỰC         │
+            │  THEO DÕI            GIỮ THÔNG TIN
+      THẤP  │  • Notification      • Khách hàng
+            │                      • Tài xế
+            │                      • Payment
+            └──────────────────────────────────►
