@@ -33,7 +33,42 @@
 | **Tài xế**                  | Nhận và thực hiện chuyến, cập nhật trạng thái/vị trí | **Cao**        |
 | **Nhân viên vận hành**      | Quản lý tài xế, khách hàng, chuyến đi và xử lý sự cố | **Cao**        |
 | **Ban giám đốc**            | Định hướng, phê duyệt và theo dõi hiệu quả dự án     | **Cao**        |
-| **Tài chính/Kế toán**       | Quản lý doanh thu, thanh toán và đối soát            | **Trung bình** |
-| **IT/Đội phát triển**       | Xây dựng, triển khai và bảo trì hệ thống             | **Cao**        |
+### Mindmap Stakeholder
 
+```text
+                         ┌──────────────────┐
+                         │   CAB SYSTEM     │
+                         └────────┬─────────┘
+                                  │
+          ┌───────────────────────┼───────────────────────┐
+          │                       │                       │
+          ▼                       ▼                       ▼
+   👤 NGƯỜI DÙNG             🏢 NỘI BỘ               🔗 ĐỐI TÁC
+          │                       │                       │
+     ┌────┴────┐          ┌───────┼───────┐          ┌────┴────┐
+     ▼         ▼          ▼       ▼       ▼          ▼         ▼
+ Khách hàng  Tài xế    Ban GĐ  Vận hành   IT     Thanh toán  Thông báo
+     │         │          │       │       │          │         │
+     ▼         ▼          ▼       ▼       ▼          ▼         ▼
+ Đặt xe     Nhận xe    Phê duyệt Quản lý Phát triển  Payment   SMS/Email/
+ Theo dõi   Thực hiện  Chiến lược Chuyến Hệ thống   điện tử    Push
+ Thanh toán Cập nhật
+ Đánh giá   vị trí
+```
 
+### Phân nhóm mức độ quan trọng
+
+```text
+                 CAB SYSTEM
+                     │
+       ┌─────────────┼─────────────┐
+       │             │             │
+       ▼             ▼             ▼
+   QUAN TRỌNG      TRUNG BÌNH    HỖ TRỢ
+       │             │             │
+       ├─ Khách hàng ├─ Kế toán   ├─ Notification
+       ├─ Tài xế      ├─ Payment   └─ Các đối tác khác
+       ├─ Vận hành    │
+       ├─ Ban GĐ      │
+       └─ IT          │
+```
