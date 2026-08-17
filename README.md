@@ -25,6 +25,8 @@
 * **Báo cáo, phân quyền** → hỗ trợ quản lý và ra quyết định.
 * **Có khả năng mở rộng** → đáp ứng nhiều người dùng và dễ phát triển tính năng mới.
 
+##2
+
 | Stakeholder                 | Vai trò                                              | Tầm quan trọng |
 | --------------------------- | ---------------------------------------------------- | -------------- |
 | **Khách hàng**              | Đặt xe, theo dõi chuyến, thanh toán, đánh giá        | **Cao**        |
@@ -77,3 +79,14 @@
                          │
                          ▼
                  QUYỀN LỰC / ẢNH HƯỞNG
+## 3.Mục đích kinh doanh của hệ thống CAB
+
+* **Đáp ứng số lượng lớn khách hàng** và tài xế.
+* **Tự động hóa việc phân công tài xế**, giảm thao tác thủ công.
+* **Hỗ trợ nhiều phương thức thanh toán** như tiền mặt và thanh toán điện tử.
+* **Nâng cao trải nghiệm khách hàng** thông qua theo dõi chuyến và thông báo.
+* **Quản lý tập trung** khách hàng, tài xế, chuyến đi và giao dịch.
+* **Tăng hiệu quả vận hành** và giảm thời gian xử lý.
+* **Cung cấp báo cáo, thống kê** để hỗ trợ ra quyết định.
+* **Đảm bảo hệ thống có khả năng mở rộng** và dễ bổ sung dịch vụ mới.
+* **Tăng tính bảo mật và an toàn dữ liệu**.
