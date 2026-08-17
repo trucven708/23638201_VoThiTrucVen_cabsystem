@@ -90,3 +90,22 @@
 * **Cung cấp báo cáo, thống kê** để hỗ trợ ra quyết định.
 * **Đảm bảo hệ thống có khả năng mở rộng** và dễ bổ sung dịch vụ mới.
 * **Tăng tính bảo mật và an toàn dữ liệu**.
+  
+## 4. Xác định phạm vi dự án trong 7 tuần
+
+### Các module quan trọng để hệ thống CAB hoạt động
+
+Có thể chia thành **8 module cốt lõi**:
+
+| Module                     | Chức năng chính                               | 
+| -------------------------- | --------------------------------------------- | 
+| **1. User Management**     | Đăng ký, đăng nhập, quản lý khách hàng/tài xế | 
+| **2. Booking & Trip**      | Tạo booking, quản lý trạng thái chuyến        | 
+| **3. Driver & Vehicle**    | Quản lý tài xế, xe, trạng thái sẵn sàng       | 
+| **4. Driver Dispatch**     | Tìm và phân công tài xế tự động               | 
+| **5. Location & Tracking** | Vị trí tài xế, ETA, theo dõi chuyến           | 
+| **6. Fare & Payment**      | Tính cước, tiền mặt/thanh toán điện tử        | 
+| **7. Notification**        | Thông báo cho khách hàng và tài xế            | 
+| **8. Admin/Ops**           | Quản lý và xử lý chuyến, tài xế, giao dịch    |
+
+
