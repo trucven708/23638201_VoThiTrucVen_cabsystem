@@ -108,4 +108,24 @@ Có thể chia thành **8 module cốt lõi**:
 | **7. Notification**        | Thông báo cho khách hàng và tài xế            | 
 | **8. Admin/Ops**           | Quản lý và xử lý chuyến, tài xế, giao dịch    |
 
+## 5. Yêu cầu nghiệp vụ (Business Requirements)
+
+| ID       | Yêu cầu nghiệp vụ                                                                                     |
+| -------- | ----------------------------------------------------------------------------------------------------- |
+| **BR01** | Khách hàng có thể **đăng ký, đăng nhập và quản lý thông tin cá nhân**.                                |
+| **BR02** | Khách hàng có thể **đặt xe**, nhập **điểm đón, điểm đến** và lựa chọn loại xe.                        |
+| **BR03** | Hệ thống **tự động tìm và phân công tài xế phù hợp** dựa trên vị trí và trạng thái tài xế.            |
+| **BR04** | Khách hàng được **thông báo** khi đặt xe thành công và khi tài xế nhận chuyến.                        |
+| **BR05** | Khách hàng có thể **theo dõi chuyến đi**, vị trí tài xế và thời gian dự kiến đến.                     |
+| **BR06** | Tài xế có thể **nhận/từ chối chuyến** và cập nhật trạng thái chuyến đi.                               |
+| **BR07** | Sau khi chuyến hoàn thành, hệ thống **tính cước** và hiển thị số tiền khách hàng cần thanh toán.      |
+| **BR08** | Khách hàng có thể **thanh toán bằng tiền mặt hoặc phương thức điện tử** theo chính sách doanh nghiệp. |
+| **BR09** | Khách hàng có thể **xem lịch sử chuyến đi và giao dịch**.                                             |
+| **BR10** | Khách hàng có thể **đánh giá tài xế sau khi hoàn thành chuyến**.                                      |
+| **BR11** | Nhân viên vận hành có thể **quản lý khách hàng, tài xế, phương tiện và chuyến đi**.                   |
+| **BR12** | Hệ thống cung cấp **báo cáo về số chuyến, doanh thu, tỷ lệ hoàn thành và hủy chuyến**.                |
+
+### Luồng nghiệp vụ chính
+
+**Đăng nhập → Nhập điểm đón/điểm đến → Đặt xe → Hệ thống tìm tài xế → Tài xế nhận → Theo dõi chuyến → Hoàn thành → Thanh toán → Đánh giá.**
 
