@@ -129,3 +129,62 @@ Có thể chia thành **8 module cốt lõi**:
 
 **Đăng nhập → Nhập điểm đón/điểm đến → Đặt xe → Hệ thống tìm tài xế → Tài xế nhận → Theo dõi chuyến → Hoàn thành → Thanh toán → Đánh giá.**
 
+## 6. Phân rã chức năng
+
+### 1. Đặt xe
+
+* Nhập điểm đón.
+* Nhập điểm đến.
+* Chọn loại xe.
+* Xác nhận yêu cầu.
+* Tạo chuyến đi.
+
+### 2. Tìm tài xế
+
+* Xác định vị trí khách hàng.
+* Xác định bán kính tìm kiếm.
+* Lập danh sách tài xế đang sẵn sàng.
+* Kiểm tra loại xe phù hợp.
+* Tính khoảng cách từ tài xế đến khách.
+* Xếp hạng tài xế theo tiêu chí.
+* Gửi yêu cầu cho tài xế.
+* Chờ tài xế chấp nhận.
+* Nếu từ chối/không phản hồi → tìm tài xế tiếp theo.
+* Không có tài xế → thông báo khách hàng.
+
+### 3. Thực hiện chuyến
+
+* Tài xế xác nhận nhận chuyến.
+* Theo dõi vị trí tài xế.
+* Cập nhật: Đã đến → Đã đón khách → Đang di chuyển → Hoàn thành.
+* Cập nhật ETA cho khách hàng.
+* Gửi thông báo thay đổi trạng thái.
+
+### 4. Tính cước & thanh toán
+
+* Xác định loại dịch vụ.
+* Tính khoảng cách/thời gian.
+* Tính giá chuyến.
+* Hiển thị số tiền cần trả.
+* Thanh toán tiền mặt hoặc điện tử.
+* Xử lý thanh toán thất bại.
+* Lưu lịch sử giao dịch.
+
+### 5. Sau chuyến
+
+* Cập nhật chuyến hoàn thành.
+* Gửi thông báo cho khách hàng.
+* Khách hàng xem chi tiết/cước.
+* Đánh giá tài xế.
+* Lưu lịch sử chuyến.
+
+### 6. Quản trị vận hành
+
+* Quản lý khách hàng.
+* Quản lý tài xế.
+* Quản lý phương tiện.
+* Theo dõi chuyến đang diễn ra.
+* Xử lý chuyến lỗi/hủy.
+* Tra cứu giao dịch.
+* Xem báo cáo.
+
