@@ -68,11 +68,11 @@
               │               │               │
               │ • Kế toán     │ • Ban giám đốc│
               │               │ • Vận hành    │
-QUYỀN         │               │ • IT           │
+QUYỀN         │               │ • IT          │
 LỰC           ├───────────────┼───────────────┤
         THẤP  │ THEO DÕI      │ GIỮ THÔNG TIN │
               │               │               │
               │ • Notification│ • Khách hàng  │
-              │               │ • Tài xế       │
-              │               │ • Payment      │
+              │               │ • Tài xế      │
+              │               │ • Payment     │
               └───────────────┴───────────────┘
