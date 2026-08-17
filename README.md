@@ -79,7 +79,7 @@
                          │
                          ▼
                  QUYỀN LỰC / ẢNH HƯỞNG
-## 3.Mục đích kinh doanh của hệ thống CAB
+## 3.Mục đích nghiệp vụ của hệ thống CAB
 
 * **Đáp ứng số lượng lớn khách hàng** và tài xế.
 * **Tự động hóa việc phân công tài xế**, giảm thao tác thủ công.
