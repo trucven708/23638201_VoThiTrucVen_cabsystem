@@ -27,10 +27,13 @@
 
 ## 2. Các bên liên quan
 
-* **Khách hàng:** Đặt và theo dõi xe.
-* **Tài xế:** Nhận và thực hiện chuyến.
-* **Nhân viên vận hành:** Quản lý chuyến, tài xế, khách hàng.
-* **Ban giám đốc:** Quản lý và theo dõi hiệu quả kinh doanh.
-* **Tài chính/Kế toán:** Quản lý thanh toán, doanh thu.
-* **IT:** Xây dựng và vận hành hệ thống.
-* **Đối tác thanh toán/Thông báo:** Cung cấp dịch vụ tích hợp.
+| Stakeholder                 | Vai trò                                              | Tầm quan trọng |
+| --------------------------- | ---------------------------------------------------- | -------------- |
+| **Khách hàng**              | Đặt xe, theo dõi chuyến, thanh toán, đánh giá        | **Cao**        |
+| **Tài xế**                  | Nhận và thực hiện chuyến, cập nhật trạng thái/vị trí | **Cao**        |
+| **Nhân viên vận hành**      | Quản lý tài xế, khách hàng, chuyến đi và xử lý sự cố | **Cao**        |
+| **Ban giám đốc**            | Định hướng, phê duyệt và theo dõi hiệu quả dự án     | **Cao**        |
+| **Tài chính/Kế toán**       | Quản lý doanh thu, thanh toán và đối soát            | **Trung bình** |
+| **IT/Đội phát triển**       | Xây dựng, triển khai và bảo trì hệ thống             | **Cao**        |
+
+
