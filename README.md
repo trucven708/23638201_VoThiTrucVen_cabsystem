@@ -61,17 +61,18 @@
 
 ### Phân nhóm mức độ quan trọng
 
-```text
-                 CAB SYSTEM
-                     │
-       ┌─────────────┼─────────────┐
-       │             │             │
-       ▼             ▼             ▼
-   QUAN TRỌNG      TRUNG BÌNH    HỖ TRỢ
-       │             │             │
-       ├─ Khách hàng ├─ Kế toán   ├─ Notification
-       ├─ Tài xế      ├─ Payment   └─ Các đối tác khác
-       ├─ Vận hành    │
-       ├─ Ban GĐ      │
-       └─ IT          │
-```
+                    MỨC ĐỘ QUAN TÂM
+                 THẤP                CAO
+              ┌───────────────┬───────────────┐
+        CAO   │ GIỮ HÀI LÒNG  │ QUẢN LÝ CHẶT  │
+              │               │               │
+              │ • Kế toán     │ • Ban giám đốc│
+              │               │ • Vận hành    │
+QUYỀN         │               │ • IT           │
+LỰC           ├───────────────┼───────────────┤
+        THẤP  │ THEO DÕI      │ GIỮ THÔNG TIN │
+              │               │               │
+              │ • Notification│ • Khách hàng  │
+              │               │ • Tài xế       │
+              │               │ • Payment      │
+              └───────────────┴───────────────┘
