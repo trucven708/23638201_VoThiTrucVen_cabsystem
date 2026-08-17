@@ -60,16 +60,20 @@
 ```
                          MỨC ĐỘ QUAN TÂM
                     THẤP ───────────────► CAO
-
-            ▲
-            │
-      CAO   │  GIỮ HÀI LÒNG       QUẢN LÝ CHẶT
-            │  • Kế toán           • Ban giám đốc
-            │                      • Vận hành
-QUYỀN       │                      • IT
-LỰC         │
-            │  THEO DÕI            GIỮ THÔNG TIN
-      THẤP  │  • Notification      • Khách hàng
-            │                      • Tài xế
-            │                      • Payment
-            └──────────────────────────────────►
+                         │
+              ┌──────────┼───────────────┐
+         CAO  │ GIỮ HÀI LÒNG │ QUẢN LÝ CHẶT │
+              │              │              │
+              │ • Kế toán    │ • Ban giám đốc│
+              │              │ • Vận hành   │
+              │              │ • IT          │
+              ├──────────────┼──────────────┤
+         THẤP │ THEO DÕI     │ GIỮ THÔNG TIN │
+              │              │              │
+              │ • Notification│ • Khách hàng │
+              │              │ • Tài xế      │
+              │              │ • Payment     │
+              └──────────────┴──────────────┘
+                         │
+                         ▼
+                 QUYỀN LỰC / ẢNH HƯỞNG
