@@ -376,10 +376,6 @@ flowchart LR
 14. Hệ thống chuyển sang bước thanh toán.
 
 ### 9. Sequence Diagram – Quy trình đặt xe
-````markdown
-### 9. Sequence Diagram – Quy trình đặt xe
-
-[↑ Quay lại mục 9](#9-sequence-diagram--quy-trình-đặt-xe)
 
 ```mermaid
 sequenceDiagram
