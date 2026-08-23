@@ -264,4 +264,91 @@ flowchart LR
     UC09 --> UC23
     NOTI --> UC23
 ```
+8. Đặc tả Use Case
 
+UC01 – Đặt xe
+Thuộc tính	Nội dung
+Tên Use Case	Đặt xe
+Actor chính	Khách hàng
+Mục tiêu	Tạo yêu cầu đặt xe
+Tiền điều kiện	Khách hàng đã đăng nhập
+Hậu điều kiện	Booking được tạo và chuyển sang trạng thái chờ tìm tài xế
+Trigger	Khách hàng chọn chức năng Đặt xe
+Luồng chính
+Khách hàng chọn Đặt xe.
+Hệ thống yêu cầu nhập điểm đón.
+Khách hàng nhập điểm đón.
+Hệ thống yêu cầu nhập điểm đến.
+Khách hàng nhập điểm đến.
+Khách hàng chọn loại xe.
+Hệ thống kiểm tra thông tin.
+Hệ thống tạo booking.
+Hệ thống tìm tài xế phù hợp.
+Hệ thống gửi yêu cầu đến tài xế.
+Tài xế nhận chuyến.
+Hệ thống cập nhật trạng thái booking.
+Hệ thống thông báo cho khách hàng.
+Luồng thay thế
+
+A1 – Thông tin không hợp lệ
+
+Hệ thống phát hiện điểm đón hoặc điểm đến không hợp lệ.
+Hệ thống thông báo lỗi.
+Khách hàng nhập lại thông tin.
+
+A2 – Không tìm thấy tài xế
+
+Hệ thống tìm kiếm trong phạm vi quy định.
+Không tìm thấy tài xế phù hợp.
+Hệ thống mở rộng phạm vi tìm kiếm.
+Nếu vẫn không có tài xế, hệ thống thông báo cho khách hàng.
+Booking chuyển sang trạng thái không tìm được tài xế.
+UC01 – Tìm và phân công tài xế
+Thuộc tính	Nội dung
+Tên Use Case	Tìm và phân công tài xế
+Actor chính	Hệ thống
+Actor phụ	Tài xế
+Mục tiêu	Tìm tài xế phù hợp cho booking
+Tiền điều kiện	Booking đã được tạo
+Hậu điều kiện	Một tài xế được phân công hoặc booking không tìm được tài xế
+Luồng chính
+Hệ thống nhận booking mới.
+Xác định vị trí khách hàng.
+Xác định loại xe khách hàng yêu cầu.
+Lấy danh sách tài xế đang sẵn sàng.
+Lọc tài xế theo loại xe.
+Tính khoảng cách từ tài xế đến khách hàng.
+Xếp hạng tài xế.
+Gửi yêu cầu đến tài xế phù hợp nhất.
+Tài xế chấp nhận chuyến.
+Hệ thống phân công tài xế.
+Cập nhật trạng thái booking.
+Gửi thông báo cho khách hàng.
+Luồng thay thế
+Tài xế từ chối → chuyển sang tài xế tiếp theo.
+Tài xế không phản hồi → chuyển sang tài xế tiếp theo.
+Không có tài xế → thông báo khách hàng.
+Tài xế mất kết nối → loại khỏi danh sách sẵn sàng.
+UC01 – Thực hiện chuyến
+Thuộc tính	Nội dung
+Tên Use Case	Thực hiện chuyến
+Actor chính	Tài xế
+Actor phụ	Khách hàng
+Mục tiêu	Thực hiện chuyến từ điểm đón đến điểm đến
+Tiền điều kiện	Tài xế đã nhận chuyến
+Hậu điều kiện	Chuyến được hoàn thành
+Luồng chính
+Tài xế nhận chuyến.
+Hệ thống cập nhật trạng thái Đã nhận.
+Tài xế di chuyển đến điểm đón.
+Hệ thống cập nhật vị trí tài xế.
+Tài xế xác nhận Đã đến.
+Khách hàng lên xe.
+Tài xế cập nhật Đã đón khách.
+Tài xế bắt đầu chuyến.
+Hệ thống cập nhật trạng thái Đang di chuyển.
+Hệ thống cập nhật vị trí và ETA.
+Tài xế đến điểm đến.
+Tài xế xác nhận Hoàn thành.
+Hệ thống tính cước.
+Chuyển sang bước thanh toán.
