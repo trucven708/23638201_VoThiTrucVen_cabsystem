@@ -376,7 +376,7 @@ flowchart LR
 14. Hệ thống chuyển sang bước thanh toán.
 
 ### 9. Sequence Diagram – Quy trình đặt xe
-```mermaid
+``` mermaid
 sequenceDiagram
     actor KH as Khách hàng
     participant APP as CAB App
