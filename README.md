@@ -309,51 +309,68 @@ flowchart LR
 4. Nếu vẫn không có tài xế, hệ thống thông báo cho khách hàng.
 5. Booking chuyển sang trạng thái **Không tìm được tài xế**.
 #### UC02 – Tìm và phân công tài xế
-Thuộc tính	Nội dung
-Tên Use Case	Tìm và phân công tài xế
-Actor chính	Hệ thống
-Actor phụ	Tài xế
-Mục tiêu	Tìm tài xế phù hợp cho booking
-Tiền điều kiện	Booking đã được tạo
-Hậu điều kiện	Một tài xế được phân công hoặc booking không tìm được tài xế
-Luồng chính
-Hệ thống nhận booking mới.
-Xác định vị trí khách hàng.
-Xác định loại xe khách hàng yêu cầu.
-Lấy danh sách tài xế đang sẵn sàng.
-Lọc tài xế theo loại xe.
-Tính khoảng cách từ tài xế đến khách hàng.
-Xếp hạng tài xế.
-Gửi yêu cầu đến tài xế phù hợp nhất.
-Tài xế chấp nhận chuyến.
-Hệ thống phân công tài xế.
-Cập nhật trạng thái booking.
-Gửi thông báo cho khách hàng.
-Luồng thay thế
-Tài xế từ chối → chuyển sang tài xế tiếp theo.
-Tài xế không phản hồi → chuyển sang tài xế tiếp theo.
-Không có tài xế → thông báo khách hàng.
-Tài xế mất kết nối → loại khỏi danh sách sẵn sàng.
+
+[↑ Quay lại Use Case Diagram](https://github.com/trucven708/23638201_VoThiTrucVen_cabsystem/blob/main/README.md#use-case-diagram)
+
+| Thuộc tính | Nội dung |
+|---|---|
+| **Tên Use Case** | Tìm và phân công tài xế |
+| **Actor chính** | Hệ thống |
+| **Actor phụ** | Tài xế |
+| **Mục tiêu** | Tìm tài xế phù hợp cho booking |
+| **Tiền điều kiện** | Booking đã được tạo |
+| **Hậu điều kiện** | Một tài xế được phân công hoặc booking không tìm được tài xế |
+
+##### Luồng chính
+
+1. Hệ thống nhận booking mới.
+2. Xác định vị trí khách hàng.
+3. Xác định loại xe khách hàng yêu cầu.
+4. Lấy danh sách tài xế đang sẵn sàng.
+5. Lọc tài xế theo loại xe.
+6. Tính khoảng cách từ tài xế đến khách hàng.
+7. Xếp hạng tài xế.
+8. Gửi yêu cầu đến tài xế phù hợp nhất.
+9. Tài xế chấp nhận chuyến.
+10. Hệ thống phân công tài xế.
+11. Cập nhật trạng thái booking.
+12. Gửi thông báo cho khách hàng.
+
+##### Luồng thay thế
+
+- **A1 – Tài xế từ chối:** Chuyển sang tài xế tiếp theo.
+- **A2 – Tài xế không phản hồi:** Chuyển sang tài xế tiếp theo.
+- **A3 – Không có tài xế:** Thông báo cho khách hàng.
+- **A4 – Tài xế mất kết nối:** Loại tài xế khỏi danh sách sẵn sàng.
+
+---
+
 #### UC03 – Thực hiện chuyến
-Thuộc tính	Nội dung
-Tên Use Case	Thực hiện chuyến
-Actor chính	Tài xế
-Actor phụ	Khách hàng
-Mục tiêu	Thực hiện chuyến từ điểm đón đến điểm đến
-Tiền điều kiện	Tài xế đã nhận chuyến
-Hậu điều kiện	Chuyến được hoàn thành
-Luồng chính
-Tài xế nhận chuyến.
-Hệ thống cập nhật trạng thái Đã nhận.
-Tài xế di chuyển đến điểm đón.
-Hệ thống cập nhật vị trí tài xế.
-Tài xế xác nhận Đã đến.
-Khách hàng lên xe.
-Tài xế cập nhật Đã đón khách.
-Tài xế bắt đầu chuyến.
-Hệ thống cập nhật trạng thái Đang di chuyển.
-Hệ thống cập nhật vị trí và ETA.
-Tài xế đến điểm đến.
-Tài xế xác nhận Hoàn thành.
-Hệ thống tính cước.
-Chuyển sang bước thanh toán.
+
+[↑ Quay lại Use Case Diagram](https://github.com/trucven708/23638201_VoThiTrucVen_cabsystem/blob/main/README.md#use-case-diagram)
+
+| Thuộc tính | Nội dung |
+|---|---|
+| **Tên Use Case** | Thực hiện chuyến |
+| **Actor chính** | Tài xế |
+| **Actor phụ** | Khách hàng |
+| **Mục tiêu** | Thực hiện chuyến từ điểm đón đến điểm đến |
+| **Tiền điều kiện** | Tài xế đã nhận chuyến |
+| **Hậu điều kiện** | Chuyến được hoàn thành |
+
+##### Luồng chính
+
+1. Tài xế nhận chuyến.
+2. Hệ thống cập nhật trạng thái **Đã nhận**.
+3. Tài xế di chuyển đến điểm đón.
+4. Hệ thống cập nhật vị trí tài xế.
+5. Tài xế xác nhận **Đã đến**.
+6. Khách hàng lên xe.
+7. Tài xế cập nhật trạng thái **Đã đón khách**.
+8. Tài xế bắt đầu chuyến.
+9. Hệ thống cập nhật trạng thái **Đang di chuyển**.
+10. Hệ thống cập nhật vị trí và ETA.
+11. Tài xế đến điểm đến.
+12. Tài xế xác nhận **Hoàn thành**.
+13. Hệ thống tính cước.
+14. Hệ thống chuyển sang bước thanh toán.
