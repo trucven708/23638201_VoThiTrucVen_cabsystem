@@ -167,4 +167,101 @@ Có thể chia thành **8 module cốt lõi**:
 * Xử lý chuyến lỗi/hủy.
 * Tra cứu giao dịch.
 * Xem báo cáo.
+## 7. Use Case Diagram
+Các actor chính
+Khách hàng
+Tài xế
+Nhân viên vận hành
+Ban giám đốc
+Kế toán
+Cổng thanh toán
+Dịch vụ thông báo
+7. Use Case Diagram
+Các actor chính
+Khách hàng
+Tài xế
+Nhân viên vận hành
+Ban giám đốc
+Kế toán
+Cổng thanh toán
+Dịch vụ thông báo
+```mermaid
+flowchart LR
+    KH["Khách hàng"]
+    TX["Tài xế"]
+    NV["Nhân viên vận hành"]
+    BG["Ban giám đốc"]
+    KT["Tài chính / Kế toán"]
+    PAY["Cổng thanh toán"]
+    NOTI["Dịch vụ thông báo"]
+
+    subgraph CAB["CAB SYSTEM"]
+        UC01["Đăng ký / Đăng nhập"]
+        UC02["Quản lý thông tin cá nhân"]
+
+        UC03["Đặt xe"]
+        UC04["Theo dõi chuyến"]
+        UC05["Xem lịch sử chuyến"]
+        UC06["Thanh toán"]
+        UC07["Đánh giá tài xế"]
+
+        UC08["Nhận / Từ chối chuyến"]
+        UC09["Cập nhật trạng thái chuyến"]
+        UC10["Cập nhật vị trí"]
+        UC11["Xem thu nhập"]
+
+        UC12["Tự động tìm tài xế"]
+        UC13["Phân công tài xế"]
+
+        UC14["Quản lý khách hàng"]
+        UC15["Quản lý tài xế"]
+        UC16["Quản lý phương tiện"]
+        UC17["Theo dõi chuyến đang diễn ra"]
+        UC18["Xử lý chuyến hủy / sự cố"]
+        UC19["Tra cứu giao dịch"]
+
+        UC20["Xem báo cáo"]
+        UC21["Xem thống kê hiệu quả"]
+
+        UC22["Xử lý thanh toán điện tử"]
+        UC23["Gửi thông báo"]
+    end
+
+    KH --> UC01
+    KH --> UC02
+    KH --> UC03
+    KH --> UC04
+    KH --> UC05
+    KH --> UC06
+    KH --> UC07
+
+    TX --> UC08
+    TX --> UC09
+    TX --> UC10
+    TX --> UC11
+
+    UC03 --> UC12
+    UC12 --> UC13
+
+    NV --> UC14
+    NV --> UC15
+    NV --> UC16
+    NV --> UC17
+    NV --> UC18
+    NV --> UC19
+
+    BG --> UC20
+    BG --> UC21
+
+    KT --> UC19
+    KT --> UC20
+
+    UC06 --> UC22
+    PAY --> UC22
+
+    UC03 --> UC23
+    UC08 --> UC23
+    UC09 --> UC23
+    NOTI --> UC23
+```
 
