@@ -374,3 +374,56 @@ flowchart LR
 12. Tài xế xác nhận **Hoàn thành**.
 13. Hệ thống tính cước.
 14. Hệ thống chuyển sang bước thanh toán.
+
+### 9. Sequence Diagram – Quy trình đặt xe
+```mermaid
+sequenceDiagram
+    actor KH as Khách hàng
+    participant APP as CAB App
+    participant SYS as CAB System
+    participant DIS as Driver Dispatch
+    actor TX as Tài xế
+    participant NOTI as Notification
+    participant PAY as Payment Gateway
+
+    KH->>APP: Nhập điểm đón và điểm đến
+    KH->>APP: Chọn loại xe
+    APP->>SYS: Gửi yêu cầu đặt xe
+    SYS->>SYS: Kiểm tra thông tin booking
+    SYS->>DIS: Yêu cầu tìm tài xế
+
+    DIS->>DIS: Lọc tài xế phù hợp
+    DIS->>DIS: Tính khoảng cách
+    DIS->>DIS: Xếp hạng tài xế
+
+    DIS->>TX: Gửi yêu cầu nhận chuyến
+    TX->>DIS: Chấp nhận chuyến
+    DIS->>SYS: Xác nhận tài xế
+
+    SYS->>NOTI: Gửi thông báo
+    NOTI->>KH: Thông báo tài xế đã nhận chuyến
+
+    TX->>SYS: Cập nhật vị trí
+    SYS->>KH: Hiển thị vị trí và ETA
+
+    TX->>SYS: Xác nhận đã đến
+    SYS->>NOTI: Gửi thông báo
+    NOTI->>KH: Tài xế đã đến
+
+    TX->>SYS: Xác nhận đã đón khách
+    TX->>SYS: Cập nhật đang di chuyển
+
+    SYS->>KH: Cập nhật vị trí và ETA
+
+    TX->>SYS: Xác nhận hoàn thành
+    SYS->>SYS: Tính cước
+    SYS->>KH: Hiển thị số tiền thanh toán
+
+    KH->>PAY: Thanh toán điện tử
+    PAY->>SYS: Xác nhận thanh toán
+    SYS->>NOTI: Gửi thông báo hoàn tất
+    NOTI->>KH: Chuyến hoàn tất
+
+    KH->>APP: Đánh giá tài xế
+    APP->>SYS: Lưu đánh giá
+    ```
