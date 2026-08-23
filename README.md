@@ -38,47 +38,25 @@
 | **Nhà cung cấp thanh toán** | Xử lý thanh toán điện tử                             | **Trung bình** |
 | **Nhà cung cấp thông báo**  | Cung cấp SMS/Email/Push Notification                 | **Trung bình** |
 
-### Mindmap Stakeholder
+quadrantChart
+    title Ma trận Power - Interest của Stakeholder CAB
+    x-axis "Mức độ quan tâm thấp" --> "Mức độ quan tâm cao"
+    y-axis "Quyền lực thấp" --> "Quyền lực cao"
 
-```text
-                         ┌──────────────────┐
-                         │   CAB SYSTEM     │
-                         └────────┬─────────┘
-                                  │
-          ┌───────────────────────┼───────────────────────┐
-          │                       │                       │
-          ▼                       ▼                       ▼
-   👤 NGƯỜI DÙNG             🏢 NỘI BỘ               🔗 ĐỐI TÁC
-          │                       │                       │
-     ┌────┴────┐          ┌───────┼───────┐          ┌────┴────┐
-     ▼         ▼          ▼       ▼       ▼          ▼         ▼
- Khách hàng  Tài xế    Ban GĐ  Vận hành   IT     Thanh toán  Thông báo
-     │         │          │       │       │          │         │
-     ▼         ▼          ▼       ▼       ▼          ▼         ▼
- Đặt xe     Nhận xe    Phê duyệt Quản lý Phát triển  Payment   SMS/Email/
- Theo dõi   Thực hiện  Chiến lược Chuyến Hệ thống   điện tử    Push
- Thanh toán Cập nhật
- Đánh giá   vị trí
-```
-                         MỨC ĐỘ QUAN TÂM
-                    THẤP ───────────────► CAO
-                         │
-              ┌──────────┼───────────────────┐
-         CAO  │ GIỮ HÀI LÒNG │ QUẢN LÝ CHẶT  │
-              │              │               │
-              │ • Kế toán    │ • Ban giám đốc│
-              │              │ • Vận hành    │
-              │              │ • IT          │
-              ├──────────────┼───────────────┤
-         THẤP │ THEO DÕI     │ GIỮ THÔNG TIN │
-              │              │               │
-              │ • Notification│ • Khách hàng │
-              │              │ • Tài xế      │
-              │              │ • Payment     │
-              └──────────────┴───────────────┘
-                         │
-                         ▼
-                 QUYỀN LỰC / ẢNH HƯỞNG
+    quadrant-1 "Quản lý chặt"
+    quadrant-2 "Giữ hài lòng"
+    quadrant-3 "Theo dõi"
+    quadrant-4 "Giữ thông tin"
+
+    "Ban giám đốc": [0.88, 0.95]
+    "Vận hành": [0.85, 0.82]
+    "IT": [0.72, 0.78]
+    "Kế toán": [0.55, 0.68]
+
+    "Khách hàng": [0.88, 0.35]
+    "Tài xế": [0.82, 0.32]
+    "Payment": [0.48, 0.28]
+    "Notification": [0.35, 0.20]
 ## 3.Mục đích nghiệp vụ của hệ thống CAB
 
 * **Đáp ứng số lượng lớn khách hàng** và tài xế.
