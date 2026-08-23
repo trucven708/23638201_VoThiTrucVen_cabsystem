@@ -264,9 +264,9 @@ flowchart LR
     UC09 --> UC23
     NOTI --> UC23
 ```
-8. Đặc tả Use Case
+## 8. Đặc tả Use Case
 
-UC01 – Đặt xe
+#### UC01 – Đặt xe
 Thuộc tính	Nội dung
 Tên Use Case	Đặt xe
 Actor chính	Khách hàng
@@ -303,7 +303,7 @@ Không tìm thấy tài xế phù hợp.
 Hệ thống mở rộng phạm vi tìm kiếm.
 Nếu vẫn không có tài xế, hệ thống thông báo cho khách hàng.
 Booking chuyển sang trạng thái không tìm được tài xế.
-UC01 – Tìm và phân công tài xế
+#### UC02 – Tìm và phân công tài xế
 Thuộc tính	Nội dung
 Tên Use Case	Tìm và phân công tài xế
 Actor chính	Hệ thống
@@ -329,7 +329,7 @@ Tài xế từ chối → chuyển sang tài xế tiếp theo.
 Tài xế không phản hồi → chuyển sang tài xế tiếp theo.
 Không có tài xế → thông báo khách hàng.
 Tài xế mất kết nối → loại khỏi danh sách sẵn sàng.
-UC01 – Thực hiện chuyến
+#### UC03 – Thực hiện chuyến
 Thuộc tính	Nội dung
 Tên Use Case	Thực hiện chuyến
 Actor chính	Tài xế
