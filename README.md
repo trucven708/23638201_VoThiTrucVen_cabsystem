@@ -376,7 +376,12 @@ flowchart LR
 14. Hệ thống chuyển sang bước thanh toán.
 
 ### 9. Sequence Diagram – Quy trình đặt xe
-``` mermaid
+````markdown
+### 9. Sequence Diagram – Quy trình đặt xe
+
+[↑ Quay lại mục 9](#9-sequence-diagram--quy-trình-đặt-xe)
+
+```mermaid
 sequenceDiagram
     actor KH as Khách hàng
     participant APP as CAB App
@@ -421,9 +426,10 @@ sequenceDiagram
 
     KH->>PAY: Thanh toán điện tử
     PAY->>SYS: Xác nhận thanh toán
+
     SYS->>NOTI: Gửi thông báo hoàn tất
     NOTI->>KH: Chuyến hoàn tất
 
     KH->>APP: Đánh giá tài xế
     APP->>SYS: Lưu đánh giá
-    ```
+```
