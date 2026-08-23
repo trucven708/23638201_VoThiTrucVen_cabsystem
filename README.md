@@ -429,3 +429,71 @@ sequenceDiagram
     KH->>APP: Đánh giá tài xế
     APP->>SYS: Lưu đánh giá
 ```
+## 10. Business Rule – Phân tích các quy tắc nghiệp vụ
+
+### BR01 – Quy tắc đăng nhập
+
+Chỉ người dùng có tài khoản hợp lệ mới được sử dụng chức năng đặt xe.
+
+---
+
+### BR02 – Quy tắc đặt xe
+
+Một booking phải có tối thiểu:
+
+- Điểm đón.
+- Điểm đến.
+- Loại xe.
+- Khách hàng hợp lệ.
+
+---
+
+### BR03 – Quy tắc tìm tài xế
+
+Hệ thống chỉ tìm những tài xế:
+
+- Đang ở trạng thái **Available**.
+- Có loại xe phù hợp.
+- Có vị trí hợp lệ.
+- Không đang thực hiện chuyến khác.
+
+---
+
+### BR04 – Quy tắc phân công tài xế
+
+Tài xế được ưu tiên dựa trên:
+
+1. Khoảng cách đến khách hàng.
+2. Trạng thái sẵn sàng.
+3. Loại xe phù hợp.
+
+---
+
+### BR05 – Quy tắc nhận chuyến
+
+Một booking chỉ được phân công cho **một tài xế tại một thời điểm**.
+
+Nếu tài xế từ chối hoặc không phản hồi, hệ thống chuyển sang tài xế khác.
+
+---
+
+### BR06 – Quy tắc trạng thái chuyến
+
+Trạng thái chuyến phải đi theo thứ tự:
+
+```text
+Requested
+    ↓
+Searching
+    ↓
+Driver Assigned
+    ↓
+Driver Arrived
+    ↓
+Passenger Picked Up
+    ↓
+In Progress
+    ↓
+Completed
+    ↓
+Paid
