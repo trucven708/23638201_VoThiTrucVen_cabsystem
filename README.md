@@ -38,6 +38,7 @@
 | **Nhà cung cấp thanh toán** | Xử lý thanh toán điện tử                             | **Trung bình** |
 | **Nhà cung cấp thông báo**  | Cung cấp SMS/Email/Push Notification                 | **Trung bình** |
 
+``` mermaid
 quadrantChart
     title Ma trận Power - Interest của Stakeholder CAB
     x-axis "Mức độ quan tâm thấp" --> "Mức độ quan tâm cao"
@@ -57,6 +58,7 @@ quadrantChart
     "Tài xế": [0.82, 0.32]
     "Payment": [0.48, 0.28]
     "Notification": [0.35, 0.20]
+```
 ## 3.Mục đích nghiệp vụ của hệ thống CAB
 
 * **Đáp ứng số lượng lớn khách hàng** và tài xế.
