@@ -266,43 +266,48 @@ flowchart LR
 ```
 ## 8. Đặc tả Use Case
 
-#### UC01 – Đặt xe
-Thuộc tính	Nội dung
-Tên Use Case	Đặt xe
-Actor chính	Khách hàng
-Mục tiêu	Tạo yêu cầu đặt xe
-Tiền điều kiện	Khách hàng đã đăng nhập
-Hậu điều kiện	Booking được tạo và chuyển sang trạng thái chờ tìm tài xế
-Trigger	Khách hàng chọn chức năng Đặt xe
-Luồng chính
-Khách hàng chọn Đặt xe.
-Hệ thống yêu cầu nhập điểm đón.
-Khách hàng nhập điểm đón.
-Hệ thống yêu cầu nhập điểm đến.
-Khách hàng nhập điểm đến.
-Khách hàng chọn loại xe.
-Hệ thống kiểm tra thông tin.
-Hệ thống tạo booking.
-Hệ thống tìm tài xế phù hợp.
-Hệ thống gửi yêu cầu đến tài xế.
-Tài xế nhận chuyến.
-Hệ thống cập nhật trạng thái booking.
-Hệ thống thông báo cho khách hàng.
-Luồng thay thế
+### UC01 – Đặt xe
 
-A1 – Thông tin không hợp lệ
+| Thuộc tính | Nội dung |
+|---|---|
+| **Tên Use Case** | Đặt xe |
+| **Actor chính** | Khách hàng |
+| **Mục tiêu** | Tạo yêu cầu đặt xe |
+| **Tiền điều kiện** | Khách hàng đã đăng nhập |
+| **Hậu điều kiện** | Booking được tạo và chuyển sang trạng thái chờ tìm tài xế |
+| **Trigger** | Khách hàng chọn chức năng Đặt xe |
 
-Hệ thống phát hiện điểm đón hoặc điểm đến không hợp lệ.
-Hệ thống thông báo lỗi.
-Khách hàng nhập lại thông tin.
+#### Luồng chính
 
-A2 – Không tìm thấy tài xế
+1. Khách hàng chọn **Đặt xe**.
+2. Hệ thống yêu cầu nhập điểm đón.
+3. Khách hàng nhập điểm đón.
+4. Hệ thống yêu cầu nhập điểm đến.
+5. Khách hàng nhập điểm đến.
+6. Khách hàng chọn loại xe.
+7. Hệ thống kiểm tra thông tin.
+8. Hệ thống tạo booking.
+9. Hệ thống tìm tài xế phù hợp.
+10. Hệ thống gửi yêu cầu đến tài xế.
+11. Tài xế nhận chuyến.
+12. Hệ thống cập nhật trạng thái booking.
+13. Hệ thống thông báo cho khách hàng.
 
-Hệ thống tìm kiếm trong phạm vi quy định.
-Không tìm thấy tài xế phù hợp.
-Hệ thống mở rộng phạm vi tìm kiếm.
-Nếu vẫn không có tài xế, hệ thống thông báo cho khách hàng.
-Booking chuyển sang trạng thái không tìm được tài xế.
+#### Luồng thay thế
+
+**A1 – Thông tin không hợp lệ**
+
+1. Hệ thống phát hiện điểm đón hoặc điểm đến không hợp lệ.
+2. Hệ thống thông báo lỗi.
+3. Khách hàng nhập lại thông tin.
+
+**A2 – Không tìm thấy tài xế**
+
+1. Hệ thống tìm kiếm trong phạm vi quy định.
+2. Không tìm thấy tài xế phù hợp.
+3. Hệ thống mở rộng phạm vi tìm kiếm.
+4. Nếu vẫn không có tài xế, hệ thống thông báo cho khách hàng.
+5. Booking chuyển sang trạng thái **Không tìm được tài xế**.
 #### UC02 – Tìm và phân công tài xế
 Thuộc tính	Nội dung
 Tên Use Case	Tìm và phân công tài xế
